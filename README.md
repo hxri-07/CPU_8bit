@@ -35,8 +35,8 @@ GTKWave: For viewing waveforms and analyzing the CPU's behavior.
 For instructions on how to download the above, you can watch this YouTube video: https://www.youtube.com/watch?v=vN1wzM0NO4c
 
 I have shared the mainfile and the testbench. To run, open up the terminal in the testbench file and put the following codes:
->> iverilog -o <testbench filename>.vvp <testbench filename>.v
->> vvp <testbench filename>.vvp
+">> iverilog -o <testbench filename>.vvp <testbench filename>.v"
+">> vvp <testbench filename>.vvp"
 
 The testbench code also contains commands to create a VCD (Value Change Dump) file. To showcase the waveforms, input gtkwave into the terminal and hit enter. 
 In the application, open the vcd file (File->Open New->Select vcd file). Select all the variables and click insert to show the waveforms.
