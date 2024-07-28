@@ -1,32 +1,70 @@
-Overview
-This project focuses on the design, implementation, and simulation of a basic 8-bit Central Processing Unit (CPU) using Verilog Hardware Description Language (HDL). The project aims to provide an educational insight into the fundamental workings of a CPU, showcasing key concepts of digital logic and computer architecture. The CPU is designed with a simplified instruction set architecture (ISA) that allows it to perform essential operations such as data loading, arithmetic computations (addition and subtraction), and logical operations (AND, OR, XOR).
+# 8-bit CPU Design and Simulation in Verilog
 
-Project Components
-1. Verilog Module
-The core of this project is a Verilog module that encapsulates the CPU's architecture and functionality. This module includes:
+## Project Overview
 
-Instruction Fetch and Decode: The module is designed to fetch instructions from memory, decode them, and execute the appropriate operations. The instruction set is simple yet sufficient to demonstrate fundamental CPU operations.
-Arithmetic Logic Unit (ALU): The ALU performs all arithmetic and logical operations. It supports basic operations like addition, subtraction, AND, OR, and XOR.
-Control Unit: The control unit manages the flow of instructions and data within the CPU, ensuring proper sequencing of operations.
+This project presents the design, implementation, and simulation of a basic 8-bit Central Processing Unit (CPU) using Verilog Hardware Description Language. The goal is to demonstrate fundamental concepts of computer architecture and digital logic design through a simplified yet functional CPU model.
 
-2. Testbench
-To verify the functionality of the CPU, a comprehensive testbench is provided. The testbench includes various test cases that cover all possible operations and scenarios, ensuring that the CPU behaves as expected under different conditions. The testbench also helps identify and debug any issues in the design.
+## Features
 
-3. Simulation
-Simulation is a crucial part of this project, allowing us to verify the functionality and performance of the CPU design. We use Icarus Verilog, an open-source Verilog simulation and synthesis tool, for functional verification. The simulation process helps us validate the design by comparing the expected and actual outputs for various test cases.
+- 8-bit data path
+- Simple instruction set architecture
+- Basic arithmetic and logical operations
+- Modular Verilog design
+- Comprehensive testbench for verification
+- Waveform generation for visual analysis
 
-4. Waveform Analysis
-To gain deeper insights into the CPU's operation, we use GTKWave, a waveform viewer for electronic signals. GTKWave allows us to visualize the CPU's behavior over time, providing a detailed view of signal changes and timing. This visualization is instrumental in understanding the sequence of operations, debugging, and optimizing the design.
+## CPU Architecture
 
-Educational Value
-This project serves as an educational tool for students and enthusiasts interested in digital logic design and computer architecture. It covers fundamental concepts such as:
+The CPU implements a minimal instruction set, capable of performing the following operations:
+- Load immediate value
+- Addition
+- Subtraction
+- Logical AND
+- Logical OR
+- Logical XOR
 
-Instruction Decoding: Understanding how a CPU interprets and executes instructions.
-ALU Operations: Exploring basic arithmetic and logical functions within a processor.
-Control Flow: Learning how a control unit orchestrates the various components of the CPU to perform tasks in a coordinated manner.
-Through this project, users can observe how a CPU processes instructions cycle by cycle, executes various operations, and produces output. This hands-on experience provides valuable insights into the inner workings of a simple processor and lays the groundwork for more complex digital design projects in the future.
+Key components of the CPU include:
+1. Arithmetic Logic Unit (ALU)
+2. Accumulator register
+3. Instruction decoder
+4. Program counter
 
-Getting Started
+## Implementation Details
+
+- The CPU is described in Verilog HDL, showcasing hardware description techniques.
+- A testbench is provided to verify the functionality of each instruction.
+- The design is synthesizable, allowing for potential FPGA implementation.
+
+## Simulation and Verification
+
+The project utilizes:
+- Icarus Verilog for compilation and simulation
+- GTKWave for waveform visualization and analysis
+
+The simulation demonstrates the CPU's ability to:
+1. Fetch instructions
+2. Decode and execute operations
+3. Update the accumulator with operation results
+4. Increment the program counter
+
+## Educational Value
+
+This project serves as an excellent learning tool for:
+- Understanding basic CPU architecture
+- Exploring digital logic design principles
+- Practicing Verilog HDL
+- Gaining experience with EDA tools and simulation techniques
+
+## Future Enhancements
+
+Potential areas for expansion include:
+- Implementing a more complex instruction set
+- Adding memory interfaces
+- Developing a simple assembler
+- Exploring pipelining concepts
+
+## Getting Started
+
 To get started with this project, you will need:
 
 Icarus Verilog: For simulating the Verilog design.
