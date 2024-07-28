@@ -9,7 +9,6 @@ This project presents the design, implementation, and simulation of a basic 8-bi
 - 8-bit data path
 - Simple instruction set architecture
 - Basic arithmetic and logical operations
-- Modular Verilog design
 - Comprehensive testbench for verification
 - Waveform generation for visual analysis
 
@@ -46,22 +45,6 @@ The simulation demonstrates the CPU's ability to:
 2. Decode and execute operations
 3. Update the accumulator with operation results
 4. Increment the program counter
-
-## Educational Value
-
-This project serves as an excellent learning tool for:
-- Understanding basic CPU architecture
-- Exploring digital logic design principles
-- Practicing Verilog HDL
-- Gaining experience with EDA tools and simulation techniques
-
-## Future Enhancements
-
-Potential areas for expansion include:
-- Implementing a more complex instruction set
-- Adding memory interfaces
-- Developing a simple assembler
-- Exploring pipelining concepts
 
 ## Getting Started
 
