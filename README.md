@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This is still an on-going project. This project presents the design, implementation, and simulation of a basic 8-bit Central Processing Unit (CPU) using Verilog Hardware Description Language. The goal is to demonstrate fundamental concepts of computer architecture and digital logic design through a simplified yet functional CPU model.
+This is still an on-going project. It presents the design, implementation, and simulation of a basic 8-bit Central Processing Unit (CPU) using Verilog Hardware Description Language. The goal is to demonstrate fundamental concepts of computer architecture and digital logic design through a simplified yet functional CPU model.
 
 ## Features
 
